@@ -31,7 +31,7 @@
     color: rgba(0, 0, 0, 0.411);
 }
 .heading{
-    margin-top: -35px;
+    margin-top: -15px;
 }
 .heading h1{
     text-align: center;
@@ -55,7 +55,7 @@ b{
     padding: 5px;
     font-size: 20px;
     border: unset;
-    background-color:  #E0DECF;
+    background-color:  #e3e3e39a;
     border-radius: 3px;
 }
 #search{
@@ -64,7 +64,7 @@ b{
     padding: 5px;
     border: unset;
     font-size: 20px;
-    background-color: #E0DECF;
+    background-color: #e3e3e39a;
     margin: 0px 10px;
     border-radius: 3px;
 }
@@ -83,7 +83,7 @@ b{
     padding: 5px;
     font-size: 20px;
     border: unset;
-    background-color: #E0DECF;
+    background-color: #e3e3e39a;
     margin-right: 10px;
     border-radius: 3px;
 } 
@@ -129,11 +129,12 @@ b{
 .hometext .text2{
     font-size: 30px;
     line-height: 50px;
+    text-align: center;
 }
 .hometext .text3{
     font-size: 17px;
     text-align: center;
-    width: 900px;
+    width: 70%;
     line-height: 25px;
     opacity: 0.8;
 }
@@ -159,6 +160,8 @@ b{
     align-items: center;
     justify-content: center;
     column-gap: 100px;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 .product .productcard{
    display: flex;
@@ -167,7 +170,7 @@ b{
    justify-content: center;
 }
 .productcard .card{
-    background-color: #E0DECF;
+    background-color: #e3e3e39a;
     padding: 30px 50px;
     text-align: center;
     border-radius: 5px;
@@ -205,8 +208,8 @@ b{
 }
 .product2{
     background-color: #F8F8F8;
-    margin-top: 10px;
-    height: 90dvh;
+    margin-top: 30px;
+    padding-bottom: 50px;
 }
 .productcard2{
     text-align: center;
@@ -214,6 +217,7 @@ b{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     column-gap: 300px;
 }
 .productcard2 .card2{
@@ -238,9 +242,90 @@ b{
 .productcard2 button a{
     color: rgba(0, 0, 0, 0.612);
 }
+.youtubevideo h1 {
+    font-size: 35px;
+    font-weight: 500;
+    padding: 50px;
+    margin-left: 50px;
+}
+.videocard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px;
+    background-color: #f8f8f8;
+}
+.videocard iframe{
+    border-radius: 5px;
+    background-color: transparent;
+}
+.aboutimg{
+    background-image: url("/Photos/leaves.jpg");
+    width: auto;
+    height: 50vh;
+    background-size: cover;
+}
+.footercon{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    column-gap: 350px;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #FFECE6;
+    padding: 20px;
+}
+.footer .copy{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-bottom: -10px;
+}
+.footercon p{
+    font-size: 25px;
+    line-height: 50px;
+    opacity: 0.6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footercon a{
+    text-decoration: none;
+    color: black;
+}
+strong{
+    margin-left: -50px;
+}
+
 @media screen  and (max-width:750px) {
     .category ul{
         display: none;
+    }
+    .hometext .text1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .hometext .text2{
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        opacity: 0.6;
+    }
+    .hometext .text3{
+        display: none;
+    }
+    .productcard2 .card2{
+        padding: 30px;
+    
+    }
+    .productpage2 h1{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .footercon p{
+        font-size: 20px;
     }
     
 }
