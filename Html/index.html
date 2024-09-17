@@ -7,6 +7,7 @@
     <title>Verdant Eco World</title>
     <link rel="stylesheet" href="/Css/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -61,39 +62,53 @@
     <!-- ========== Start Product Section ========== -->
     <div class="productpage">
         <h1>Our Products</h1>
-        <div class="product">
-            <div class="productcard">
-                <div class="card">
-                    <img src="/Photos/product1.JPG" alt="Paper Pen" class="productimg">
-                    <button class="productbtn">Quick View</button>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="productcard">
+                        <div class="card">
+                            <img src="/Photos/product1.JPG" alt="Paper Pen" class="productimg">
+                            <button class="productbtn"><a href="productpage1.html">Quick View</a></button>
+                        </div>
+                        <div class="productcost">
+                            <p>Paper Pen</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="productcost">
-                    <p>Paper Pen</p>
-                    <p>$10</p>
+
+                <div class="swiper-slide">
+                    <div class="productcard">
+                        <div class="card">
+                            <img src="/Photos/product2.PNG" alt="Paper Pen" class="productimg">
+                            <button class="productbtn"><a href="productpage2.html">Quick View</a></button>
+                        </div>
+                        <div class="productcost">
+                            <p>Paper Pen</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productcard">
+                        <div class="card">
+                            <img src="/Photos/product3.PNG" alt="Paper Pen" class="productimg">
+                            <button class="productbtn"><a href="productpage3.html">Quick View</a></button>
+                        </div>
+                        <div class="productcost">
+                            <p>Paper Pen</p>
+                            <p>$10</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="productcard">
-                <div class="card">
-                    <img src="/Photos/product2.PNG" alt="Paper Pen" class="productimg">
-                    <button class="productbtn">Quick View</button>
-                </div>
-                <div class="productcost">
-                    <p>Paper Pen</p>
-                    <p>$10</p>
-                </div>
-            </div>
-            <div class="productcard">
-                <div class="card">
-                    <img src="/Photos/product3.PNG" alt="Paper Pen" class="productimg">
-                    <button class="productbtn">Quick View</button>
-                </div>
-                <div class="productcost">
-                    <p>Paper Pen</p>
-                    <p>$10</p>
-                </div>
-            </div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
+
     <!-- ========== End Product Section ========== -->
     `
     <!-- ========== Start Section ========== -->
@@ -110,11 +125,11 @@
             <div class="productcard2">
                 <div class="card2">
                     <img src="/Photos/product2.1.JPG" alt="">
-                    <button><a href="">Quick View</a></button>
+                    <button class="productbtn"><a href="productpage4.html">Quick View</a></button>
                 </div>
                 <div class="card2">
                     <img src="/Photos/product2.2.JPG" alt="">
-                    <button><a href="">Quick View</a></button>
+                    <button class="productbtn"><a href="productpage5.html">Quick View</a></button>
                 </div>
             </div>
         </div>
@@ -136,11 +151,11 @@
             <div class="productcard2">
                 <div class="card2">
                     <img src="/Photos/tshirt1.JPG" alt="">
-                    <button><a href="">Quick View</a></button>
+                    <button class="productbtn"><a href="productpage6.html">Quick View</a></button>
                 </div>
                 <div class="card2">
                     <img src="/Photos/tshirt2.JPG" alt="">
-                    <button><a href="">Quick View</a></button>
+                    <button class="productbtn"><a href="productpage7.html">Quick View</a></button>
                 </div>
             </div>
         </div>
@@ -150,12 +165,45 @@
     <!-- ========== Start Section ========== -->
     <div class="youtubevideo">
         <h1>FOLLOW US</h1>
-        <div class="videocard">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/_e4bkXkeJEI?si=M6OqjSFS9OiRm7r6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/X0Uu8wg31hM?si=N3LeT9buq5x3wduU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/I18L-CB5-pQ?si=bptjs3g-iBCLjmfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="videocard">
+                        <iframe width="400" height="300"
+                            src="https://www.youtube.com/embed/_e4bkXkeJEI?si=M6OqjSFS9OiRm7r6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="videocard">
+                        <iframe width="400" height="300"
+                            src="https://www.youtube.com/embed/X0Uu8wg31hM?si=N3LeT9buq5x3wduU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="videocard">
+                        <iframe width="400" height="300"
+                            src="https://www.youtube.com/embed/I18L-CB5-pQ?si=bptjs3g-iBCLjmfg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
+
     <!-- ========== End Section ========== -->
 
     <!-- ========== Start Section ========== -->
@@ -182,10 +230,29 @@
         </div>
         <p class="copy">&copy;Aravind</p>
     </div>
-    
+
 
     <!-- ========== End Section ========== -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
 
 
 

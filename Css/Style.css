@@ -152,7 +152,7 @@ b{
 .productpage h1{
     margin-left: 60px;
     margin-bottom: 50px;
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 500;
 }
 .product{
@@ -160,24 +160,26 @@ b{
     align-items: center;
     justify-content: center;
     column-gap: 100px;
-    flex-wrap: wrap;
-    overflow: hidden;
 }
-.product .productcard{
+.productcard{
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
 }
 .productcard .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #e3e3e39a;
-    padding: 30px 50px;
+    padding: 50px 80px;
     text-align: center;
     border-radius: 5px;
 }
 .productcard img{
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     display: block;
     border-radius: 5px;
@@ -194,7 +196,7 @@ b{
     text-align: center;
 }
 .productcost p{
-    font-size: 21px;
+    font-size: 25px;
     font-weight:lighter;
     margin: 6px 0px;
 }
@@ -205,6 +207,8 @@ b{
 .productpage2 h1{
     font-size: 35px;
     font-weight: 500;
+    line-height: 50px;
+    text-align: center;
 }
 .product2{
     background-color: #F8F8F8;
@@ -248,13 +252,16 @@ b{
     padding: 50px;
     margin-left: 50px;
 }
+.productbtn a{
+    color: black;
+}
 .videocard{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-    padding: 30px;
+    padding: 10px;
     background-color: #f8f8f8;
 }
 .videocard iframe{
@@ -275,7 +282,7 @@ b{
     flex-wrap: wrap;
 }
 .footer{
-    background-color: #FFECE6;
+    background-color: #f5c5b6;
     padding: 20px;
 }
 .footer .copy{
@@ -297,6 +304,9 @@ b{
 }
 strong{
     margin-left: -50px;
+}
+.swiper-button-next,.swiper-button-prev{
+    color: black !important;
 }
 
 @media screen  and (max-width:750px) {
@@ -326,6 +336,26 @@ strong{
     }
     .footercon p{
         font-size: 20px;
+    }
+    .productcard .card{
+        padding: 30px 50px;
+    }
+    .productcard img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+    }
+    .productcost p{
+        font-size: 21px;
+        font-weight:lighter;
+        margin: 6px 0px;
+    }
+    .productpage h1{
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0;
     }
     
 }
