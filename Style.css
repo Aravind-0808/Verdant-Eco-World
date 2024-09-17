@@ -367,28 +367,25 @@ strong{
      .product{
         column-gap: 10px;
     }
-
+    
     .productcard2{
         column-gap: 10px;
     }
     .productcard2 .card2{
-        background-color: #ffece6af;
         padding: 30px 15px;
         margin-top: 0px;
-        border-radius: 3px;
     
     }
     .productcard2 img{
         width: 140px;
         height: 140px;
-        display: block;
-        border-radius: 3px;
     }
     .productcard2 button{
-        font-size: 25px;
-        background-color: transparent;
-        border: unset;
-        margin-top: 20px;
+        font-size: 20px;
     }
-    
+    .productpage h1{
+        margin-left: 30px;
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
 }
